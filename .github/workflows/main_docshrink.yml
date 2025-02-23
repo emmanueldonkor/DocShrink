@@ -24,7 +24,7 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build DocShrink.Backend/DocShrink.sln --configuration Release
+        run: dotnet build DocShrink.Backend/DocShrinkApi.sln --configuration Release
 
       - name: dotnet publish
         run: dotnet publish DocShrink.Backend/src/API -c Release -o "${{env.DOTNET_ROOT}}/myapp
