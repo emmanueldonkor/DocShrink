@@ -56,7 +56,7 @@ export function Uploader() {
       setUploading(true);
       setUploadProgress(0);
 
-      const response = await fetch("https://docshrink-ayb5anevc9gtguc0.italynorth-01.azurewebsites.net/api/v1/files/compress", {
+      const response = await fetch("https://docshrink-ayb5anevc9gtguc0.italynorth-01.azurewebsites.net/api/v1.0/files/compress", {
         method: "POST",
         body: formData,
       });
